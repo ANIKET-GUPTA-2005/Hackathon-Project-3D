@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Home from "./pages/Home"
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
@@ -7,7 +8,7 @@ import Documentation from "./pages/Documentation";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -17,7 +18,7 @@ const App = () => {
         {/* <Route path="/documentation" element={<Documentation />} /> */}
       </Routes>
    
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
